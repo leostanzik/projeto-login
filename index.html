@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="estilos/style.css">
   <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
@@ -14,11 +15,27 @@
 
       </div>
       <div id="formulario">
-        <h1>login</h1>
-        <p>seja bem vindo novamente, faça login para acessar sua conta e
-           fazer suas configurações ambientes</p>
-           <form action="login.php" method="post"></form>
+        <h1>Login</h1>
 
+          <p>seja bem vindo novamente, faça login para acessar sua conta e
+             fazer suas configurações ambientes</p>
+              <form action="login.php" method="post" autocomplete="on">
+                 <div id="campo">
+                  <span class="material-symbols-outlined">mail</span>
+                  <input type="email" name="login" placeholder="Seu email" autocomplete="email">
+                  <label for="ilogin">Login</label>
+
+                </div>
+                <div id="senha">
+                  <span class="material-symbols-outlined">lock</span>
+                  <input type="password" name="senha" placeholder="Sua senha" autocomplete="current-password">
+                  <label for="isenha">Senha</label>
+
+                </div>
+                <input type="submit" value="Entrar">
+                <a href="#">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
+
+              </form>
       </div>
 
     </section>
