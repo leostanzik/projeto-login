@@ -67,6 +67,8 @@ div#formulario > h1 {
 
 div#formulario > p {
    font-size: 0.8em;
+   text-align: center;
+   margin-bottom: 10px;
 }
 
 form > div.campo {
@@ -150,4 +152,5 @@ form > a.esqueciasenha > span {
    font-size: 0.8em;
    color: rgb(0, 0, 0);
 }
+
 
