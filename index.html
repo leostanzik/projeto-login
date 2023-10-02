@@ -20,13 +20,13 @@
           <p>seja bem vindo novamente, faça login para acessar sua conta e
              fazer suas configurações ambientes</p>
               <form action="login.php" method="post" autocomplete="on">
-                 <div id="campo">
+                 <div class="campo">
                   <span class="material-symbols-outlined">mail</span>
                   <input type="email" name="login" placeholder="Seu email" autocomplete="email" required maxlength="30">
                   <label for="ilogin">Login</label>
 
                 </div>
-                <div id="senha">
+                <div class="campo">
                   <span class="material-symbols-outlined">lock</span>
                   <input type="password" name="senha" placeholder="Sua senha" autocomplete="current-password"
                   required minlength="8">
@@ -34,7 +34,9 @@
 
                 </div>
                 <input type="submit" value="Entrar">
-                <a href="#">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
+                <a href="#" class="esqueciasenha">
+                  Esqueci a senha <span class="material-symbols-outlined">mail</span>
+                </a>
 
               </form>
       </div>
