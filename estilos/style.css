@@ -70,12 +70,12 @@ div#formulario > p {
 }
 
 form > div.campo {
-
    background-color: gray;
+   border: 2px solid gray;
    width: 100%;
    display: block;
    height: 40px;
-   border-radius: 5px;
+   border-radius: 8px;
    margin: 5px 0px; /* cima e baixo */
 
 }
@@ -83,6 +83,31 @@ form > div.campo {
 div.campo > label {
    display: none;
 }
+
+div.campo > span {
+   color: white;
+   /*background-color: black;*/
+   font-size: 2em;
+   width: 40px;
+   padding: 5px;
+}
+
+div.campo > input {
+   background-color: white;
+   font-size: 1em;
+   width:calc(100% - 40px);
+   height: 100%;
+   transform: translateY(-42px);
+   border: 0px; 
+   border-radius: 8px;
+   padding: 4px;
+   margin-left: 40px ;
+   
+}
+/* para dar foco a uma caixa na hora de digitar caso esteja com uma cor, no nosso caso
+não usaremos por o background da caixa esta branco
+div.campo >input:focus-within{
+}*/
 
 form > input[type=submit] {
   display: block;
